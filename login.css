@@ -1,0 +1,113 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #004080, #0066cc);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark Mode */
+#darkToggle:checked ~ * {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+#darkToggle:checked ~ main,
+#darkToggle:checked ~ form,
+#darkToggle:checked ~ button {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 36px;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* Main Login Box */
+main {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #004080;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #004080;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0059b3;
+}
+
+/* Links */
+p {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  main {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
