@@ -1,0 +1,135 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+/* Main Container */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+/* Form Section */
+.form-section {
+  flex: 1 1 60%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+.form-section h2 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form button {
+  margin-top: 20px;
+  background-color: #004080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #003060;
+}
+
+/* Info Section */
+.info-section {
+  flex: 1 1 35%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+.info-section h2 {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+footer a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .form-section, .info-section {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+}
